@@ -5,7 +5,7 @@
 
 # Read more: https://github.com/cyu/rack-cors
 
-corsOrigins = 'https://xaegis.vercel.app/, http://localhost:4000'
+corsOrigins = 'https://xaegis.vercel.app, http://localhost:4000'
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
