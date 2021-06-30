@@ -9,7 +9,7 @@ corsOrigins = 'https://xaegis.vercel.app/, http://localhost:4000'
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'corsOrigins'.split(',').map { |origin| origin.strip }
+    origins corsOrigins.split(',').map { |origin| origin.strip }
 
     resource '*',
       headers: :any,
